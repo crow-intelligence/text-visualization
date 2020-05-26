@@ -16,8 +16,7 @@ Gutenberg were deleted by hand
 ### Backbone filtering
 Although it is not strictly necessary for this project, we employed backbone
 filtering on the semantic similarity graph of the sentences. src
-/textprocessing/disparity.py is based on [this repo](https://github.com
-/DerwenAI/disparity_filter) (with minor modifications).
+/textprocessing/disparity.py is based on [this repo](https://github.com/DerwenAI/disparity_filter) (with minor modifications).
 ### Dependecies
 ```bash
 sudo apt install texlive-font-utils
