@@ -27,3 +27,9 @@ sudo apt install pdf2svg
 epstopdf lines.eps lines.pdf
 pdf2svg lines.pdf lines.svg
 ```
+
+### Dotplot to svg
++ cut & enhance img in Shotwell
++ ```convert -negate dotplot.jpg dotplot_inverted.jpg``` if 
+you need to reverse the colors
++ ```convert dotplot_inverted.jpg dotplot.svg```
