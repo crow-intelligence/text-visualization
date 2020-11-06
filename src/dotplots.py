@@ -24,10 +24,9 @@ for i in range(n):
             row.append(int(j/100))
             col.append(int(i/100))
 
-n_shape = (max(row)*10, max(col)*10)
+n_shape = (max(row)*15, max(col)*15)
 M = csc_matrix((data, (row, col)), shape=n_shape,  dtype=np.uint8)
 M_array = M.toarray().tobytes()
 
-img = Image.frombytes(data=M_array, mode="1", size=(800, 800),
-                      decoder_name="F;8")
+img = Image.frombytes(data=M_array, mode="1", size=(1000, 1000),)
 img.save("imgs/dotplot.jpg", "JPEG")
